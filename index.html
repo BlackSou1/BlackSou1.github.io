@@ -17,6 +17,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;500;700&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/4c1e25a77a.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/style.min.css">
+	<script src="js/bundle.min.js" defer></script>
 </head>
 <body>
 	<header class="header fixed-item">
@@ -38,13 +39,17 @@
 							<p class="header__language-current">English</p>
 							<i class="header__language-icon fas fa-caret-down"></i>
 						</a>
-						<div class="header__language-submenu submenu">
+						<div class="header__language-submenu-wrapper submenu__wrapper">
 							<a class="header__language-submenu-button" href="index">English</a>
 							<a class="header__language-submenu-button" href="ru">Русский</a>
 						</div>
 					</div>
-					<a class="header__social-item" href="https://github.com/BlackSou1" target="_blank" aria-label="Github account"><i class="fab fa-github"></i></a>
-					<button class="header__hamburger hamburger__button" aria-label="Open navigation"><i class="fas fa-bars"></i></button>
+					<a class="header__social-item" href="https://github.com/BlackSou1" target="_blank" aria-label="Github account">
+						<i class="fab fa-github"></i>
+					</a>
+					<button class="header__hamburger hamburger__button" aria-label="Open navigation">
+						<i class="fas fa-bars"></i>
+					</button>
 				</div>
 			</div>
 		</div>
@@ -55,7 +60,9 @@
 				<div class="home__wrapper fade-up">
 					<h1 class="home__title section__title">Black Soul</h1>
 					<p class="home__description">Front-end Developer</p>
-					<a class="home__arrow" href="#services" aria-label="Scroll down"><i class="fas fa-arrow-down"></i></a>
+					<a class="home__arrow" href="#services" aria-label="Scroll down">
+						<i class="fas fa-arrow-down"></i>
+					</a>
 				</div>
 			</div>
 		</section>
@@ -85,25 +92,25 @@
 								<div class="page-width">
 									<div class="portfolio__cards">
 										<div class="portfolio__card fade-right">
-											<a class="portfolio__card-link slider__link" href="Maximal" target="_blank">
+											<a class="portfolio__card-link" href="Maximal" target="_blank">
 												<img class="portfolio__card-img" src="img/Maximal.jpg" alt="Maximal">
 												<h3 class="portfolio__card-title">Maximal</h3>
 											</a>
 										</div>
 										<div class="portfolio__card fade-left">
-											<a class="portfolio__card-link slider__link" href="Advogrand" target="_blank">
+											<a class="portfolio__card-link" href="Advogrand" target="_blank">
 												<img class="portfolio__card-img" src="img/Advogrand.jpg" alt="Advogrand">
 												<h3 class="portfolio__card-title">Advogrand</h3>
 											</a>
 										</div>
 										<div class="portfolio__card fade-right">
-											<a class="portfolio__card-link slider__link" href="Skokov" target="_blank">
+											<a class="portfolio__card-link" href="Skokov" target="_blank">
 												<img class="portfolio__card-img" src="img/Skokov.jpg" alt="Skokov">
 												<h3 class="portfolio__card-title">Skokov</h3>
 											</a>
 										</div>
 										<div class="portfolio__card fade-left">
-											<a class="portfolio__card-link slider__link" href="Counsel" target="_blank">
+											<a class="portfolio__card-link" href="Counsel" target="_blank">
 												<img class="portfolio__card-img" src="img/Counsel.jpg" alt="Counsel">
 												<h3 class="portfolio__card-title">Counsel</h3>
 											</a>
@@ -115,25 +122,25 @@
 								<div class="page-width">
 									<div class="portfolio__cards">
 										<div class="portfolio__card fade-right">
-											<a class="portfolio__card-link slider__link" href="Atlantida" target="_blank">
+											<a class="portfolio__card-link" href="Atlantida" target="_blank">
 												<img class="portfolio__card-img" src="img/Atlantida.jpg" alt="Atlantida">
 												<h3 class="portfolio__card-title">Atlantida</h3>
 											</a>
 										</div>
 										<div class="portfolio__card fade-left">
-											<a class="portfolio__card-link slider__link" href="CarStore" target="_blank">
+											<a class="portfolio__card-link" href="CarStore" target="_blank">
 												<img class="portfolio__card-img" src="img/CarStore.jpg" alt="CarStore">
 												<h3 class="portfolio__card-title">CarStore</h3>
 											</a>
 										</div>
 										<div class="portfolio__card fade-right">
-											<a class="portfolio__card-link slider__link" href="Lemon" target="_blank">
+											<a class="portfolio__card-link" href="Lemon" target="_blank">
 												<img class="portfolio__card-img" src="img/Lemon.jpg" alt="Lemon">
 												<h3 class="portfolio__card-title">Lemon</h3>
 											</a>
 										</div>
 										<div class="portfolio__card fade-left">
-											<a class="portfolio__card-link slider__link" href="Delivery" target="_blank">
+											<a class="portfolio__card-link" href="Delivery" target="_blank">
 												<img class="portfolio__card-img" src="img/Delivery.jpg" alt="Delivery">
 												<h3 class="portfolio__card-title">Delivery</h3>
 											</a>
@@ -145,7 +152,7 @@
 								<div class="page-width">
 									<div class="portfolio__cards">
 										<div class="portfolio__card fade-right">
-											<a class="portfolio__card-link slider__link" href="Pizza" target="_blank">
+											<a class="portfolio__card-link" href="Pizza" target="_blank">
 												<img class="portfolio__card-img" src="img/Pizza.jpg" alt="Pizza">
 												<h3 class="portfolio__card-title">Pizza</h3>
 											</a>
@@ -157,8 +164,12 @@
 					</div>
 					<div class="page-width">
 						<div class="portfolio__slider-buttons fade-up">
-							<button class="portfolio__slider-prev slider__prev"><i class="fas fa-chevron-left"></i></button>
-							<button class="portfolio__slider-next slider__next"><i class="fas fa-chevron-right"></i></button>
+							<button class="portfolio__slider-prev slider__prev" tabindex="-1">
+								<i class="fas fa-chevron-left"></i>
+							</button>
+							<button class="portfolio__slider-next slider__next" tabindex="-1">
+								<i class="fas fa-chevron-right"></i>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -331,6 +342,5 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/bundle.min.js"></script>
 </body>
 </html>
